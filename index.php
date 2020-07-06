@@ -246,6 +246,12 @@ function print_navigation($navigation_link, $navigation_content) {
 
 <style amp-custom>
 	
+a {
+	text-decoration: inherit;
+	font-style: inherit;
+	color: inherit;
+	}
+	
 .he {
 	font-family: 'Frank Ruhl Libre', serif;	
 	direction: rtl;
