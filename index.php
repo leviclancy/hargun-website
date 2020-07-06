@@ -100,7 +100,7 @@ function print_navigation($navigation_link, $navigation_content) {
 	if (!(is_numeric($indent_count))): $indent_count = 0; endif;
 	
 	// Begin the navigation item
-	echo "<li><a href='/?link=". $navigation_link ."'>
+	echo "<li><a href='/?link=". $navigation_link ."'>";
 		
 	// Echo out the content of the navigation item
 	echo "<span class='navigation-item-content he'>". $navigation_content['he'] ."</span>";
