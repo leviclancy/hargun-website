@@ -134,6 +134,30 @@ $sitemap_array = [
 		"ar"=>"",
 		"en"=>"Figures",
 		"subpages"=> [
+			"rabbi-zakharia-berashe" => [
+				"he"=>"הרב זכריה בראשי",
+				"ku"=>"",
+				"ar"=>"",
+				"en"=>"Rabbi Zakharia Berashe",
+				],
+			"" => [
+				"he"=>"",
+				"ku"=>"",
+				"ar"=>"",
+				"en"=>"",
+				],
+			"" => [
+				"he"=>"",
+				"ku"=>"",
+				"ar"=>"",
+				"en"=>"",
+				],
+			"" => [
+				"he"=>"",
+				"ku"=>"",
+				"ar"=>"",
+				"en"=>"",
+				],
 			"" => [
 				"he"=>"",
 				"ku"=>"",
