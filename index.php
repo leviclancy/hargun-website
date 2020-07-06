@@ -1,5 +1,16 @@
 <?
 
+include_once('configuration.php');
+
+if (!(empty($unlock_key))):
+
+	if ($_REQUEST['unlock_key'] !== $unlock_key):
+		echo "Unavailable";
+		exit;
+		endif;
+
+	endif;
+
 $sitemap_array = [
  	"about" => [
 		"he"=>"על הארגון",
