@@ -1,7 +1,7 @@
 <?
 
 $sitemap_array = [
-  "about"	=> [
+ 	"about" => [
 		"he"=>"על הארגון",
 		"ku"=>"",
 		"en"=>"National Association",
@@ -9,27 +9,64 @@ $sitemap_array = [
 	"history" => [
 		"he"=>"תולדות",
 		"ku"=>"",
-		"en"=>"",
+		"en"=>"History",
 		],
 	"communities" => [
 		"he"=>"קהילות",
 		"ku"=>"",
-		"en"=>"",
+		"en"=>"Communities",
+		"subpages"=>[
+			"urmia" => [
+				"he"=>"",
+				"ku"=>"",
+				"en"=>"",
+				],
+			"arbil" => [
+				"he"=>"",
+				"ku"=>"",
+				"en"=>"",
+				],
+			 ],
 		],
 	"figures" => [
 		"he"=>"דמויות ואישים",
 		"ku"=>"",
-		"en"=>"",
+		"en"=>"Figures",
 		],
 	"circle-of-life" => [
 		"he"=>"מחזור החיים",
 		"ku"=>"",
-		"en"=>"",
+		"en"=>"Circle of Life",
 		],
 	"folklore" => [
 		"he"=>"פולקלור",
 		"ku"=>"",
-		"en"=>"",
+		"en"=>"Folklore",
+		],
+	"publications" => [
+		"he"=>"ספרים וכתבי - עת",
+		"ku"=>"",
+		"en"=>"Publications",
+		],
+	"recipes" => [
+		"he"=>"מהמטבח הכורדי",
+		"ku"=>"",
+		"en"=>"Recipes",
+		],
+	"photos" => [
+		"he"=>"ארכיון תמונות",
+		"ku"=>"",
+		"en"=>"Photo archive",
+		],
+	"events" => [
+		"he"=>"אירועים",
+		"ku"=>"",
+		"en"=>"Events",
+		],
+	"videos" => [
+		"he"=>"סרטים",
+		"ku"=>"",
+		"en"=>"Videos",
 		],
 	];
 	
