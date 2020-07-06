@@ -126,7 +126,7 @@ $sitemap_array = [
 				"ar"=>"القامشلي"
 				"en"=>"Qamishli",
 				],
-		],
+			],
 		],
 	"figures" => [
 		"he"=>"דמויות ואישים",
