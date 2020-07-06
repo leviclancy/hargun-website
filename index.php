@@ -130,6 +130,6 @@ function print_navigation($navigation_link, $navigation_content) {
 <ul>
 <? foreach ($sitemap_array as $navigation_link => $navigation_content):
 	print_navigation($navigation_link, $navigation_content);
-	endforeach;
+	endforeach; ?>
 </ul>
 </div>
