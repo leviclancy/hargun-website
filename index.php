@@ -241,7 +241,7 @@ function print_navigation($navigation_link, $navigation_content) {
 <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
 	
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet"> <!-- Scheherazade and Amiri also looked good. -->
+<link href="https://fonts.googleapis.com/css2?family=Lateef&display=swap" rel="stylesheet"> <!-- Scheherazade, Lateef, Amiri looked good. -->
 <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
 
 <style amp-custom>
