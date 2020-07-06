@@ -225,6 +225,49 @@ function print_navigation($navigation_link, $navigation_content) {
 
 ?>
 
+<!doctype html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8">
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<title>Foundation of Ours</title>
+<link rel="canonical" href="https://ours.foundation/">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+<script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+<script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+<script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+<script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+	
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Scheherazade&display=swap" rel="stylesheet"> <!-- Lateef and Amiri also looked good. -->
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+
+<style amp-custom>
+	
+he {
+	font-family: 'Frank Ruhl Libre', serif;	
+	direction: rtl;
+	align: right;
+	}
+
+ku, ar {
+	font-family: 'Scheherazade', serif;
+	direction: rtl;
+	align: right;
+	}
+	
+en {
+	font-family: Arial;
+	direction: ltr;
+	align: left;
+	}
+
+	
+</style>	
+</head>
+<body>
 
 <div id='navigation-sidebar'>
 <ul>
@@ -233,3 +276,7 @@ function print_navigation($navigation_link, $navigation_content) {
 	endforeach; ?>
 </ul>
 </div>
+
+</body>
+	
+</html>
