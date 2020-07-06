@@ -16,6 +16,11 @@ $sitemap_array = [
 		"ku"=>"",
 		"en"=>"Communities",
 		"subpages"=>[
+			"kirkuk" => [
+				"he"=>"כרכוכ",
+				"ku"=>"کرکوک",
+				"en"=>"Kirkuk",
+				],
 			"urmia" => [
 				"he"=>"",
 				"ku"=>"",
