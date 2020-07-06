@@ -246,19 +246,19 @@ function print_navigation($navigation_link, $navigation_content) {
 
 <style amp-custom>
 	
-he {
+.he {
 	font-family: 'Frank Ruhl Libre', serif;	
 	direction: rtl;
 	align: right;
 	}
 
-ku, ar {
+.ku, .ar {
 	font-family: 'Scheherazade', serif;
 	direction: rtl;
 	align: right;
 	}
 	
-en {
+.en {
 	font-family: Arial;
 	direction: ltr;
 	align: left;
