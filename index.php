@@ -259,7 +259,7 @@ a {
 	}
 
 .ku, .ar {
-	font-family: 'Amiri', serif;
+	font-family: 'Lateef', serif;
 	direction: rtl;
 	align: right;
 	}
