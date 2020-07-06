@@ -32,12 +32,32 @@ $sitemap_array = [
 				"ku"=>"کرکوک",
 				"en"=>"Kirkuk",
 				],
-			"urmia" => [
-				"he"=>"",
+			"nerwa" => [
+				"he"=>"נירווא",
 				"ku"=>"",
-				"en"=>"",
+				"en"=>"Nerwa",
 				],
-			"arbil" => [
+			"sondor" => [
+				"he"=>"נירווא",
+				"ku"=>"",
+				"en"=>"Sondor",
+				],
+			"silemaniye" => [
+				"he"=>"סלימניה",
+				"ku"=>"",
+				"en"=>"Silemaniye",
+				],
+			"amadiya" => [
+				"he"=>"עמדיה",
+				"ku"=>"",
+				"en"=>"Amadiya",
+				],
+			"aqra" => [
+				"he"=>"עקרא",
+				"ku"=>"",
+				"en"=>"Aqra",
+				],
+			"" => [
 				"he"=>"",
 				"ku"=>"",
 				"en"=>"",
@@ -126,7 +146,7 @@ function print_navigation($navigation_link, $navigation_content) {
 ?>
 
 
-<div>
+<div id='navigation-sidebar'>
 <ul>
 <? foreach ($sitemap_array as $navigation_link => $navigation_content):
 	print_navigation($navigation_link, $navigation_content);
