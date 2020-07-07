@@ -164,35 +164,35 @@ $sitemap_array = [
 				"ar"=>"",
 				"en"=>"Shmuel Barukh",
 				],
-			"" => [
-				"he"=>"",
+			"yitzhak-amedi" => [
+				"he"=>"יצחק עמדי",
 				"ku"=>"",
 				"ar"=>"",
-				"en"=>"",
+				"en"=>"Yitzhak Amedi",
 				],
-			"" => [
-				"he"=>"",
+			"yitzhak-berashi" => [
+				"he"=>"יצחק בראשי",
 				"ku"=>"",
 				"ar"=>"",
-				"en"=>"",
+				"en"=>"Yitzhak Berashi",
 				],
-			"" => [
-				"he"=>"",
+			"gabay-yitzhak" => [
+				"he"=>"גבאי יצחק",
 				"ku"=>"",
 				"ar"=>"",
-				"en"=>"",
+				"en"=>"Gabay Yitzhak",
 				],
-			"" => [
-				"he"=>"",
+			"gabay-moshe" => [
+				"he"=>"גבאי משה",
 				"ku"=>"",
 				"ar"=>"",
-				"en"=>"",
+				"en"=>"Gabay Moshe",
 				],
-			"" => [
-				"he"=>"",
+			"hacham-zaken-abraham" => [
+				"he"=>"חכם זקן אברהם",
 				"ku"=>"",
 				"ar"=>"",
-				"en"=>"",
+				"en"=>"Hacham Zaken Abraham",
 				],
 			"" => [
 				"he"=>"",
