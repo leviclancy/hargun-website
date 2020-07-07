@@ -194,47 +194,47 @@ $sitemap_array = [
 				"ar"=>"",
 				"en"=>"Hacham Zaken Abraham",
 				],
-			"" => [
-				"he"=>"",
+			"moshe-sinduri" => [
+				"he"=>"משה סנדורי",
 				"ku"=>"",
 				"ar"=>"",
-				"en"=>"",
+				"en"=>"Moshe Sinduri",
 				],
-			"" => [
-				"he"=>"",
+			"hacham-habib-alun" => [
+				"he"=>"חכם חביב עלון",
 				"ku"=>"",
 				"ar"=>"",
-				"en"=>"",
+				"en"=>"Hacham Habi Alun",
 				],
-			"" => [
-				"he"=>"",
+			"amiram-levi" => [
+				"he"=>"עמרם לוי",
 				"ku"=>"",
 				"ar"=>"",
-				"en"=>"",
+				"en"=>"Amiram Levi",
 				],
-			"" => [
-				"he"=>"",
+			"hacham-mordechai-shabtay-zibrikho" => [
+				"he"=>"חכם מרדכי שבתאי זיבריכו",
 				"ku"=>"",
 				"ar"=>"",
-				"en"=>"",
+				"en"=>"Hacham Mordechai Shabtay Zibrikho",
 				],
-			"" => [
-				"he"=>"",
+			"hacham-shalom-yacov" => [
+				"he"=>"חכם שלום יעקב",
 				"ku"=>"",
 				"ar"=>"",
-				"en"=>"",
+				"en"=>"Hacham Shalon Yacov",
 				],
-			"" => [
-				"he"=>"",
+			"yacov-ahiya-hashiloni" => [
+				"he"=>"יעקב אחיה השילוני",
 				"ku"=>"",
 				"ar"=>"",
-				"en"=>"",
+				"en"=>"Yacov Ahiya HaShiloni",
 				],
-			"" => [
-				"he"=>"",
+			"shimoni-shalom" => [
+				"he"=>"שמעוני שלום",
 				"ku"=>"",
 				"ar"=>"",
-				"en"=>"",
+				"en"=>"Shimoni Shalom",
 				],
 			"" => [
 				"he"=>"",
