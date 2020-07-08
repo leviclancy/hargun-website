@@ -200,11 +200,11 @@ $sitemap_array = [
 				"ar"=>"",
 				"en"=>"Moshe Sinduri",
 				],
-			"hacham-habib-alun" => [
+			"hacham-habib-alvan" => [
 				"he"=>"חכם חביב עלון",
 				"ku"=>"",
 				"ar"=>"",
-				"en"=>"Hacham Habi Alun",
+				"en"=>"Hacham Habi Alvan",
 				],
 			"amiram-levi" => [
 				"he"=>"עמרם לוי",
@@ -236,23 +236,23 @@ $sitemap_array = [
 				"ar"=>"",
 				"en"=>"Shimoni Shalom",
 				],
-			"" => [
-				"he"=>"",
+			"alvan-moshe" => [
+				"he"=>"עלון משה",
 				"ku"=>"",
 				"ar"=>"",
-				"en"=>"",
+				"en"=>"Alvan Moshe",
 				],
-			"" => [
-				"he"=>"",
+			"nakhum-khaftsadi" => [
+				"he"=>"נחום חפצדה",
 				"ku"=>"",
 				"ar"=>"",
-				"en"=>"",
+				"en"=>"Nakhum Khaftsadi",
 				],
-			"" => [
-				"he"=>"",
+			"hacham-yacov-babekha" => [
+				"he"=>"חכם יעקב בבכא",
 				"ku"=>"",
 				"ar"=>"",
-				"en"=>"",
+				"en"=>"Hacham Yacov Babekha",
 				],
 			"" => [
 				"he"=>"",
