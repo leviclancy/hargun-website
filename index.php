@@ -254,11 +254,64 @@ $sitemap_array = [
 				"ar"=>"",
 				"en"=>"Hacham Yacov Babekha",
 				],
-			"" => [
-				"he"=>"",
+			"hacham-yosef-alvan" => [
+				"he"=>"חכם יוסף עלון",
 				"ku"=>"",
 				"ar"=>"",
-				"en"=>"",
+				"en"=>"Hacham Yosef Alvan",
+				],
+			"eliyahu-meir" => [
+				"he"=>"אלפייה מאיר",
+				"ku"=>"",
+				"ar"=>"",
+				"en"=>"Eliyahu Meir",
+				],
+			],
+		],
+	"circle-of-life" => [
+		"he"=>"מחזור החיים",
+		"ku"=>"",
+		"ar"=>"",
+		"en"=>"Circle of Life",
+		"subpages"=>[
+			"wedding" => [
+				"he"=>"חתונה",
+				"ku"=>"",
+				"ar"=>"",
+				"en"=>"Wedding",
+				],
+			"childbirth" => [
+				"he"=>"הולדת בנים",
+				"ku"=>"",
+				"ar"=>"",
+				"en"=>"Childbirth",
+				],
+			"bar-mitzvah" => [
+				"he"=>"בר-מצווה",
+				"ku"=>"",
+				"ar"=>"",
+				"en"=>"Bar Mitzvah",
+				],
+			"funerary" => [
+				"he"=>"פטירה",
+				"ku"=>"",
+				"ar"=>"",
+				"en"=>"Funerary",
+				],
+			],
+
+		],
+	"folklore" => [
+		"he"=>"פולקלור",
+		"ku"=>"",
+		"ar"=>"",
+		"en"=>"Folklore",
+		"subpages"=> [
+			"music" => [
+				"he"=>"מוסיקה",
+				"ku"=>"",
+				"ar"=>"",
+				"en"=>"Music",
 				],
 			"" => [
 				"he"=>"",
@@ -279,18 +332,6 @@ $sitemap_array = [
 				"en"=>"",
 				],
 			],
-		],
-	"circle-of-life" => [
-		"he"=>"מחזור החיים",
-		"ku"=>"",
-		"ar"=>"",
-		"en"=>"Circle of Life",
-		],
-	"folklore" => [
-		"he"=>"פולקלור",
-		"ku"=>"",
-		"ar"=>"",
-		"en"=>"Folklore",
 		],
 	"publications" => [
 		"he"=>"ספרים וכתבי - עת",
