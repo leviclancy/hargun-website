@@ -67,7 +67,7 @@ $sitemap_array = [
 		"bar-mitzvah",
 		"funerary",
 		],
-	"folklore" =>
+	"folklore" => [
 		"music",
 		],
 	"publications" => [],
