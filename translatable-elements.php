@@ -1,6 +1,7 @@
 <?
 
 $translatable_elements = [
+	
  	"about" => [
 		"he"=>"על הארגון",
 		"ku"=>"",
