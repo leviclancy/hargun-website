@@ -174,7 +174,7 @@ a {
 	if (!(empty($navigation_content))): 
 		echo "<ul>";
 		foreach ($navigaton_content as $subnavigation_link => $subnavigation_content):
-			echo "<li><a href='". $navigation_link ."'>". $translatable_elements[$language_request][$navigation_link] ."</a></li>";
+			echo "<li><a href='". $navigation_link ."'>". $translatable_elements[$navigation_link][$language_request] ."</a></li>";
 			endforeach;
 		echo "</ul>";
 		endif;
