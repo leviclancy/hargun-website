@@ -157,7 +157,7 @@ ul {
 
 ul li {
 	margin: 0;
-	padding: 5px 5px 5px 20px;
+	padding: 6px 5px 0 20px;
 	list-style-type: none;
 	}
 
