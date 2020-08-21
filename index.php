@@ -84,6 +84,20 @@ $sitemap_array = [
 		],
 	];
 
+function language_picker($string_id, $language_request) {
+	
+	global $language_request_allowed;
+	
+	global $translatable_elements;
+	
+	if (!(empty($translatable_elements[$string_id][$language_request]))): echo $translatable_elements[$string_id][$language_request]; endif;
+	
+	foreach (array_keys($language_request_allowed) as $language_request_possible):
+		if (!(empty($translatable_elements[$string_id][$language_request_possible]))): echo $translatable_elements[$string_id][$language_request_possible]; endif;
+		endforeach;
+	
+	}
+
 ?>
 
 <!doctype html>
@@ -138,11 +152,11 @@ a {
 <div id='navigation-sidebar'>
 <ul>
 <? foreach ($sitemap_array as $navigation_link => $navigation_content):
-	echo "<li><a href='". $navigation_link ."'>". $translatable_elements[$navigation_link][$language_request] ."</a>";
+	echo "<li><a href='". $navigation_link ."'>". language_picker($navigation_link, $language_request) ."</a>";
 	if (!(empty($navigation_content))): 
 		echo "<ul>";
 		foreach ($navigation_content as $subnavigation_link):
-			echo "<li><a href='". $subnavigation_link ."'>". $translatable_elements[$subnavigation_link][$language_request] ."</a></li>";
+			echo "<li><a href='". $subnavigation_link ."'>". language_picker($navigation_link, $language_request) ."</a></li>";
 			endforeach;
 		echo "</ul>";
 		endif;
