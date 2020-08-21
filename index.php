@@ -149,6 +149,12 @@ a {
 	direction: ltr;
 	align: left;
 	}
+	
+ul li {
+	margin: 0;
+	padding: 5px 5px 5px 20px;
+	list-style-type: none;
+	}
 
 	
 </style>	
