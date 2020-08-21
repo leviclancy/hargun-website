@@ -181,6 +181,8 @@ ul li {
 	endforeach; ?>
 </ul>
 </div>
+	
+<h1><? echo language_picker($pageview_request) ?></h1>
 
 </body>
 	
