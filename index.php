@@ -84,13 +84,15 @@ $sitemap_array = [
 		],
 	];
 
-function language_picker($string_id, $language_command=$language_request) {
+function language_picker($string_id, $language_command=null) {
 	
 	global $language_request_allowed;
-	
+	global $language_request;
 	global $translatable_elements;
 	
-	if (!(empty($translatable_elements[$string_id][$language_request]))): echo $translatable_elements[$string_id][$language_request]; endif;
+	if (empty($language_command) || !(isset($language_request_allowed[$language_command]))): $language_command = $language_request; endif;
+	
+	if (!(empty($translatable_elements[$string_id][$language_command]))): echo $translatable_elements[$string_id][$language_command]; endif;
 	
 	foreach (array_keys($language_request_allowed) as $language_request_possible):
 		if (!(empty($translatable_elements[$string_id][$language_request_possible]))): echo $translatable_elements[$string_id][$language_request_possible]; endif;
