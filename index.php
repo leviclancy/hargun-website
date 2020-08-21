@@ -17,8 +17,10 @@ $language_request = ( empty($_REQUEST['language']) ? "en" : $_REQUEST['language'
 if (!(isset($language_request_allowed[$language_request]))): $language_request = "en"; endif;
 
 $sitemap_array = [
- 	"about" => [],
-	"history" => [],
+ 	"about" => [
+		],
+	"history" => [
+		],
 	"communities" => [
 		"urmia",
 		"urfa",
@@ -70,51 +72,17 @@ $sitemap_array = [
 	"folklore" => [
 		"music",
 		],
-	"publications" => [],
-	"recipes" => [],
-	"photos" => [],
-	"events" => [],
-	"videos" => [],
+	"publications" => [
+		],
+	"recipes" => [
+		],
+	"photos" => [
+		],
+	"events" => [
+		],
+	"videos" => [
+		],
 	];
-	
-function print_navigation($navigation_link, $navigation_content) {
-
-	global $translatable_elements;
-	
-	// The $navigation_content must have these language options
-	$language_options = ["he", "ku", "en"];
-	
-	// If any language options are missing then skip it
-//	foreach ($language_options as $option_temp):
-//		if (empty($navigation_content[$option_temp])): return; endif;
-//		endforeach;
-	
-	// Make sure the indent count is numeric
-	if (!(is_numeric($indent_count))): $indent_count = 0; endif;
-	
-	// Begin the navigation item
-	echo "<li><a href='/?link=". $navigation_link ."'>";
-		
-	// Echo out the content of the navigation item
-	echo "<span class='navigation-item-content he'>". $navigation_content['he'] ."</span>";
-	echo "<span class='navigation-item-content ku'>". $navigation_content['ku'] ."</span>";
-	echo "<span class='navigation-item-content en'>". $navigation_content['en'] ."</span>";
-	
-	// Close the navigatio item
-	echo "</a>";
-	
-	// If no subpages, just close it here
-	if (empty($navigation_content['subpages'])):
-		echo "</li>"; endif;
-	
-	// If there are subpages, then keep going
-	foreach ($navigation_content['subpages'] as $navigation_link => $navigation_content):
-		echo "<ul>";
-		print_navigation($navigation_link, $navigation_content);
-		echo "</ul>";
-		endforeach;
-	
-	}
 
 ?>
 
@@ -170,7 +138,7 @@ a {
 <div id='navigation-sidebar'>
 <ul>
 <? foreach ($sitemap_array as $navigation_link => $navigation_content):
-	echo "<li><a href='". $navigation_link ."'>". $translatable_elements[$language_request][$navigation_link] ."</a>";
+	echo "<li><a href='". $navigation_link ."'>". $translatable_elements[$navigation_link][$language_request] ."</a>";
 	if (!(empty($navigation_content))): 
 		echo "<ul>";
 		foreach ($navigaton_content as $subnavigation_link => $subnavigation_content):
