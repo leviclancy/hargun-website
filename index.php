@@ -72,9 +72,13 @@ $sitemap_array = [
 	];
 
 // The pageview is passed in the URL
-$pageview_request_allowed = [ "home", "bookstore", "jews-of-kurdistan", "arab-and-minority-affairs", "israel-and-zionism", ];
 $pageview_request = ( empty($_REQUEST['pageview']) ? "home" : $_REQUEST['pageview'] );
-if (!(in_array($pageview_request, $pageview_request_allowed))): $pageview_request = "home"; endif;
+$pageview_request_found = 0;
+foreach ($sitemap_array as $navigation_link => $navigation_content):
+	if ($navigation_link == $pageview_request): $pageview_request_found = 1; break; endif;
+	if (in_array($pageview_request, array_keys($navigation_content))): $pageview_request_found = 1; break; endif;
+	endforeach;
+if ($pageview_request_found !== 1): $pageview_request = "home"; endif;
 
 // The language is also passed in the URL
 $language_request_allowed = [ "ar"=>"عربي", "en"=>"English", "he"=>"עברית", "ku"=>"کوردی", ];
@@ -168,7 +172,7 @@ ul li {
 	echo "<li><a href='". $navigation_link ."'>". language_picker($navigation_link) ."</a>";
 	if (!(empty($navigation_content))): 
 		echo "<ul>";
-		foreach ($navigation_content as $subnavigation_link):
+		foreach ($navigation_content as $subnavigation_link => $subnavigation_content):
 			echo "<li><a href='". $subnavigation_link ."'>". language_picker($subnavigation_link) ."</a></li>";
 			endforeach;
 		echo "</ul>";
