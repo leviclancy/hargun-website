@@ -78,7 +78,10 @@ foreach ($sitemap_array as $navigation_link => $navigation_content):
 	if ($navigation_link == $pageview_request): $pageview_request_found = 1; break; endif;
 	if (in_array($pageview_request, array_keys($navigation_content))): $pageview_request_found = 1; break; endif;
 	endforeach;
-if ($pageview_request_found !== 1): $pageview_request = "home"; endif;
+if ($pageview_request_found !== 1):
+	header("HTTP/1.0 404 Not Found");
+	echo "Not found";
+	exit; endif;
 
 // The language is also passed in the URL
 $language_request_allowed = [ "ar"=>"عربي", "en"=>"English", "he"=>"עברית", "ku"=>"کوردی", ];
