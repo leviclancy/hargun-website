@@ -21,6 +21,7 @@ $translatable_elements = [
 		"ku"=>"",
 		"ar"=>"",
 		"en"=>"Communities",
+		],
 
 	"urmia" => [
 		"he"=>"אורמיה-ריזאיה",
@@ -378,6 +379,7 @@ $translatable_elements = [
 		"ar"=>"",
 		"en"=>"Videos",
 		],
+		
 	];
 
 ?>
