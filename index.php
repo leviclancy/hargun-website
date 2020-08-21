@@ -3,74 +3,61 @@
 include_once('configuration.php');
 include_once('translatable-elements.php');
 
-if (!(empty($unlock_key))):
-
-	if ($_REQUEST['unlock_key'] !== $unlock_key):
-		echo "Unavailable";
-		exit;
-		endif;
-
-	endif;
-
-$language_request_allowed = [ "ar"=>"عربي", "en"=>"English", "he"=>"עברית", "ku"=>"کوردی", ];
-$language_request = ( empty($_REQUEST['language']) ? "en" : $_REQUEST['language'] );
-if (!(isset($language_request_allowed[$language_request]))): $language_request = "en"; endif;
-
 $sitemap_array = [
  	"about" => [
 		],
 	"history" => [
 		],
 	"communities" => [
-		"urmia",
-		"urfa",
-		"arbil",
-		"betanure",
-		"barashe",
-		"barzan",
-		"duhok",
-		"zakho",
-		"kirkuk",
-		"nerwa",
-		"sondor",
-		"silemaniye",
-		"amadiya",
-		"aqra", 
-		"challa",
-		"qamishli",
+		"urmia" => [],
+		"urfa" => [],
+		"arbil" => [],
+		"betanure" => [],
+		"barashe" => [],
+		"barzan" => [],
+		"duhok" => [],
+		"zakho" => [],
+		"kirkuk" => [],
+		"nerwa" => [],
+		"sondor" => [],
+		"silemaniye" => [],
+		"amadiya" => [],
+		"aqra" => [], 
+		"challa" => [],
+		"qamishli" => [],
 		],
 	"figures" => [
-		"rabbi-zakharia-berashe",
-		"shimoni-habib",
-		"avidani-alwan",
-		"gershon-meir",
-		"rabbi-shmuel-barukh",
-		"yitzhak-amedi",
-		"yitzhak-berashi",
-		"gabay-yitzhak",
-		"gabay-moshe",
-		"hacham-zaken-abraham",
-		"moshe-sinduri",
-		"hacham-habib-alvan",
-		"amiram-levi",
-		"hacham-mordechai-shabtay-zibrikho",
-		"hacham-shalom-yacov",
-		"yacov-ahiya-hashiloni",
-		"shimoni-shalom",
-		"alvan-moshe",
-		"nakhum-khaftsadi",
-		"hacham-yacov-babekha",
-		"hacham-yosef-alvan",
-		"eliyahu-meir",
+		"rabbi-zakharia-berashe" => [],
+		"shimoni-habib" => [],
+		"avidani-alwan" => [],
+		"gershon-meir" => [],
+		"rabbi-shmuel-barukh" => [],
+		"yitzhak-amedi" => [],
+		"yitzhak-berashi" => [],
+		"gabay-yitzhak" => [],
+		"gabay-moshe" => [],
+		"hacham-zaken-abraham" => [],
+		"moshe-sinduri" => [],
+		"hacham-habib-alvan" => [],
+		"amiram-levi" => [],
+		"hacham-mordechai-shabtay-zibrikho" => [],
+		"hacham-shalom-yacov" => [],
+		"yacov-ahiya-hashiloni" => [],
+		"shimoni-shalom" => [],
+		"alvan-moshe" => [],
+		"nakhum-khaftsadi" => [],
+		"hacham-yacov-babekha" => [],
+		"hacham-yosef-alvan" => [],
+		"eliyahu-meir" => [],
 		],
 	"circle-of-life" => [
-		"wedding",
-		"childbirth",
-		"bar-mitzvah",
-		"funerary",
+		"wedding" => [],
+		"childbirth" => [],
+		"bar-mitzvah" => [],
+		"funerary" => [],
 		],
 	"folklore" => [
-		"music",
+		"music" => [],
 		],
 	"publications" => [
 		],
@@ -83,6 +70,16 @@ $sitemap_array = [
 	"videos" => [
 		],
 	];
+
+// The pageview is passed in the URL
+$pageview_request_allowed = [ "home", "bookstore", "jews-of-kurdistan", "arab-and-minority-affairs", "israel-and-zionism", ];
+$pageview_request = ( empty($_REQUEST['pageview']) ? "home" : $_REQUEST['pageview'] );
+if (!(in_array($pageview_request, $pageview_request_allowed))): $pageview_request = "home"; endif;
+
+// The language is also passed in the URL
+$language_request_allowed = [ "ar"=>"عربي", "en"=>"English", "he"=>"עברית", "ku"=>"کوردی", ];
+$language_request = ( empty($_REQUEST['language']) ? "en" : $_REQUEST['language'] );
+if (!(isset($language_request_allowed[$language_request]))): $language_request = "en"; endif;
 
 function language_picker($string_id, $language_command=null) {
 	
