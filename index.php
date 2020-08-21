@@ -169,11 +169,11 @@ ul li {
 <div id='navigation-sidebar'>
 <ul>
 <? foreach ($sitemap_array as $navigation_link => $navigation_content):
-	echo "<li><a href='". $navigation_link ."'>". language_picker($navigation_link) ."</a>";
+	echo "<li><a href='?pageview=". $navigation_link ."'>". language_picker($navigation_link) ."</a>";
 	if (!(empty($navigation_content))): 
 		echo "<ul>";
 		foreach ($navigation_content as $subnavigation_link => $subnavigation_content):
-			echo "<li><a href='". $subnavigation_link ."'>". language_picker($subnavigation_link) ."</a></li>";
+			echo "<li><a href='?pageview=". $subnavigation_link ."'>". language_picker($subnavigation_link) ."</a></li>";
 			endforeach;
 		echo "</ul>";
 		endif;
