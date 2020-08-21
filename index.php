@@ -149,7 +149,12 @@ a {
 	direction: ltr;
 	align: left;
 	}
-	
+
+ul {
+	margin: 0;
+	padding: 0;
+	}
+
 ul li {
 	margin: 0;
 	padding: 5px 5px 5px 20px;
