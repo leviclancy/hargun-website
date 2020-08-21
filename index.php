@@ -72,7 +72,7 @@ $sitemap_array = [
 	];
 
 // The pageview is passed in the URL
-$pageview_request = ( empty($_REQUEST['pageview']) ? "home" : $_REQUEST['pageview'] );
+$pageview_request = ( empty($_REQUEST['pageview']) ? "about" : $_REQUEST['pageview'] );
 $pageview_request_found = 0;
 foreach ($sitemap_array as $navigation_link => $navigation_content):
 	if ($navigation_link == $pageview_request): $pageview_request_found = 1; break; endif;
