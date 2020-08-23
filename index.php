@@ -73,12 +73,15 @@ if (empty($_REQUEST['pageview'])):
 	header("Location: https://".$_SERVER['HTTP_HOST']."?pageview=national-association");
 	endif;
 $pageview_request = $_REQUEST['pageview'];
-echo $pageview_request."<br>test"; exit;
+
+// Make sure it actually exists
 $pageview_request_found = 0;
 foreach ($sitemap_array as $navigation_link => $navigation_content):
 	if ($navigation_link == $pageview_request): $pageview_request_found = 1; break; endif;
 	if (in_array($pageview_request, array_keys($navigation_content))): $pageview_request_found = 1; break; endif;
 	endforeach;
+
+// If it does not exist then return a 404 error
 if ($pageview_request_found !== 1):
 	header("HTTP/1.0 404 Not Found");
 	echo "Not found";
