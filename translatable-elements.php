@@ -2,7 +2,7 @@
 
 $translatable_elements = [
 	
- 	"about" => [
+ 	"national-association" => [
 		"he"=>"על הארגון",
 		"ku"=>"",
 		"ar"=>"",
