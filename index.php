@@ -6,7 +6,6 @@ include_once('translatable-elements.php');
 $sitemap_array = [
  	"national-association" => [
 		"publications" => [],
-		"recipes" => [],
 		"photos" => [],
 		"events" => [],
 		"videos" => [],
@@ -65,6 +64,9 @@ $sitemap_array = [
 	"folklore" => [
 		"music" => [],
 		],
+	"recipes" => [
+	],
+	
 	];
 
 // The pageview is passed in the URL
@@ -191,7 +193,7 @@ ul li {
 	
 <h1><? echo language_picker($pageview_request) ?></h1>
 
-if ($pageview_request == "representative"):
+<? if ($pageview_request == "representative"):
 	
 	function output_faq($translatable_elements_id) {
 		global $translatable_elements;
@@ -242,7 +244,7 @@ if ($pageview_request == "representative"):
 
 		echo "</dl>";
 	
-	endif;
+	endif; ?>
 	
 </body>
 	
