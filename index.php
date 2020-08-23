@@ -5,6 +5,12 @@ include_once('translatable-elements.php');
 
 $sitemap_array = [
  	"about" => [
+		"publications" => [],
+		"recipes" => [],
+		"photos" => [],
+		"events" => [],
+		"videos" => [],
+		"representative" => [],
 		],
 	"history" => [
 		],
@@ -58,16 +64,6 @@ $sitemap_array = [
 		],
 	"folklore" => [
 		"music" => [],
-		],
-	"publications" => [
-		],
-	"recipes" => [
-		],
-	"photos" => [
-		],
-	"events" => [
-		],
-	"videos" => [
 		],
 	];
 
@@ -187,6 +183,59 @@ ul li {
 	
 <h1><? echo language_picker($pageview_request) ?></h1>
 
+if ($pageview_request == "representative"):
+	
+	function output_faq($translatable_elements_id) {
+		global $translatable_elements;
+		global $language_request;
+		echo "<dt id='" . $translatable_elements_id ."'><a href='#" . $translatable_elements_id ."'>". $translatable_elements[$translatable_elements_id.'-question'][$language_request] ."</a></dt>";
+		echo "<dd>". $translatable_elements[$translatable_elements_id.'-answer'][$language_request] ."</dd>";
+		return; }
+	
+	echo "<dl>";
+
+		output_faq("who-is-the-representative");
+
+		output_faq("how-was-dr-zaken-appointed");
+
+		output_faq("what-is-the-role");
+
+		output_faq("what-is-the-scope");
+
+		output_faq("who-does-the-representative-represent");
+	
+		output_faq("how-is-the-representative-appointed");
+	
+		output_faq("what-is-the-population");
+	
+		output_faq("are-there-jews-in-kurdistan");
+	
+		output_faq("what-about-the-impostors");
+
+		output_faq("who-does-the-representative-not-represent");
+
+		output_faq("what-does-the-representative-not-represent");
+
+		output_faq("will-the-jews-from-kurdistan-return");
+	
+		output_faq("can-i-be-part-jewish");
+
+		output_faq("what-if-i-want-to-be-jewish");
+
+		output_faq("can-i-visit-israel");
+
+		output_faq("are-there-exchanges");
+
+		echo "<dt>What was life like for Kurdish Jews in Kurdistan?</dt>";
+		echo "<dd>Like other places, there was antisemitism in the broader society that targeted Jews in unique, bitter, and harmful ways. However, the Kurdish world is overwhelmingly dynamic and this is not the defining feature of Jewish life in Kurdistan. The focus is on reconciliation, including acknowleding happy and painful parts of history, and learning from both for a positive future.</dd>";
+
+		echo "<dt>What about the Friendship league?</td>";
+		echo "<dd>The founder was Mordechai Zaken[4][5] and the main activists who worked together were the late Moshe Zaken, a business man from Jerusalem, Meir Baruch, a retired military person, Michael Niebur who spent some time in NGOs helping the Kurds, and Mathew B. Hand an American who promoted activity of coexistence with Muslims. The response of Kurdish representatives and organizations both in Kurdistan and the diaspora was enthusiastic as can be judged from hundreds of letters, phone calls and also email received in Jerusalem within short time after the announcement of its founding in the world press and in The Voice of America in the Kurdish language, which conducted interviews with the founder, Mordechai Zaken. The League also published a newsletter called yedidut (heb., friendship) carrying the message of Israeli and Jewish friendship to Kurds worldwide.</dd>";
+
+		echo "</dl>";
+	
+	endif;
+	
 </body>
 	
 </html>
