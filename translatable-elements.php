@@ -9,6 +9,41 @@ $translatable_elements = [
 		"en"=>"National Association",
 		],
 	
+	"publications" => [
+		"he"=>"ספרים וכתבי - עת",
+		"ku"=>"",
+		"ar"=>"",
+		"en"=>"Publications",
+		],
+
+	"photos" => [
+		"he"=>"ארכיון תמונות",
+		"ku"=>"",
+		"ar"=>"",
+		"en"=>"Photo archive",
+		],
+
+	"events" => [
+		"he"=>"אירועים",
+		"ku"=>"",
+		"ar"=>"",
+		"en"=>"Events",
+		],
+
+	"videos" => [
+		"he"=>"סרטים",
+		"ku"=>"",
+		"ar"=>"",
+		"en"=>"Videos",
+		],
+	
+	"representative" => [
+		"he"=>"",
+		"ku"=>"",
+		"ar"=>"",
+		"en"=>"Representative",
+		],
+	
 	"history" => [
 		"he"=>"תולדות",
 		"ku"=>"",
@@ -345,39 +380,11 @@ $translatable_elements = [
 		"en"=>"Music",
 		],
 
-	"publications" => [
-		"he"=>"ספרים וכתבי - עת",
-		"ku"=>"",
-		"ar"=>"",
-		"en"=>"Publications",
-		],
-
 	"recipes" => [
 		"he"=>"מהמטבח הכורדי",
 		"ku"=>"",
 		"ar"=>"",
 		"en"=>"Recipes",
-		],
-
-	"photos" => [
-		"he"=>"ארכיון תמונות",
-		"ku"=>"",
-		"ar"=>"",
-		"en"=>"Photo archive",
-		],
-
-	"events" => [
-		"he"=>"אירועים",
-		"ku"=>"",
-		"ar"=>"",
-		"en"=>"Events",
-		],
-
-	"videos" => [
-		"he"=>"סרטים",
-		"ku"=>"",
-		"ar"=>"",
-		"en"=>"Videos",
 		],
 		
 	"who-is-the-representative-question" => [
