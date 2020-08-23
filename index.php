@@ -4,7 +4,7 @@ include_once('configuration.php');
 include_once('translatable-elements.php');
 
 $sitemap_array = [
- 	"about" => [
+ 	"national-association" => [
 		"publications" => [],
 		"recipes" => [],
 		"photos" => [],
