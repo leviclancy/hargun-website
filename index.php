@@ -72,6 +72,8 @@ if (empty($_REQUEST['pageview'])):
 	header("HTTP/1.1 301 Moved Permanently");
 	header("Location: https://".$_SERVER['HTTP_HOST']."?pageview=national-association");
 	endif;
+
+echo $pageview_request."<br>test"; exit;
 $pageview_request = $_REQUEST['pageview'];
 $pageview_request_found = 0;
 foreach ($sitemap_array as $navigation_link => $navigation_content):
